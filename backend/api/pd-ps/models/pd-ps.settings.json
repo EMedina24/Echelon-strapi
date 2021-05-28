@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "PDPs",
+  "info": {
+    "name": "PDPs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "PDPHeaderIMG": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "PDPSlider": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "CTA": {
+      "type": "string"
+    },
+    "CTALINK": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

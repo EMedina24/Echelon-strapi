@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pd-ps",
+      "handler": "pd-ps.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pd-ps/count",
+      "handler": "pd-ps.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pd-ps/:id",
+      "handler": "pd-ps.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pd-ps",
+      "handler": "pd-ps.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pd-ps/:id",
+      "handler": "pd-ps.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pd-ps/:id",
+      "handler": "pd-ps.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

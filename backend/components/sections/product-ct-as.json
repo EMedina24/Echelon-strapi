@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_sections_product_ct_as",
+  "info": {
+    "name": "Product CTAs",
+    "icon": "dollar-sign"
+  },
+  "options": {},
+  "attributes": {
+    "CTAimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "CTA": {
+      "type": "string"
+    },
+    "CTALink": {
+      "type": "string"
+    }
+  }
+}
